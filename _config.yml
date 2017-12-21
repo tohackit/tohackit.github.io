@@ -1,1 +1,8 @@
-theme: jekyll-theme-minimal
+# Site settings
+title: "ToHack"
+baseurl: ""
+url: "https://tohackit.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:title

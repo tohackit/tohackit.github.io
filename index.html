@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+  <div class="post-meta">
+    <p class="post-head">
+        <a class="post-link post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </p>
+    {{ post.excerpt }}
+    <hr/>
+  </div>
+{% endfor %}

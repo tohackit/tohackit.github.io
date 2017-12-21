@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:locale" content="it_IT" />
+    <link rel="canonical" href="https://tohackit.github.io/" />
+    <meta property="og:url" content="https://tohackit.github.io/" />
+    <meta property="og:site_name" content="tohackit.github.io" />
+
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="/"><img class="logo" src="/imgs/logo.png"/></a></h1>
+        <p><a href="/archive">Archivio eventi passati</a></p>
+        <p></p>
+        <p class="view"><a href="https://github.com/tohackit">Visita il profilo GitHub</a></p>
+      </header>
+      <section>
+        {{ content }}
+      </section>
+      <footer>        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/js/scale.fix.js"></script>
+  </body>
+</html>
